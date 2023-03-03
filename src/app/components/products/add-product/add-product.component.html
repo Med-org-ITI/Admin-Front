@@ -1,0 +1,31 @@
+<h1 mat-dialog-title style="font-size: 18px;">Add Product</h1>
+<div mat-dialog-content style="padding-top: 10px;">
+    <mat-form-field appearance="outline">
+        <mat-label>Product Name</mat-label>
+        <input matInput placeholder="Name" class="inp">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Product Category</mat-label>
+        <mat-select placeholder="Category">
+            <mat-option value="Analgesics">Analgesics</mat-option>
+            <mat-option value="Vitamins">Vitamins</mat-option>
+            <mat-option value="Antibiotic">Antibiotic</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Expire Date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Price</mat-label>
+        <input matInput type="number" placeholder="Price">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <textarea matInput></textarea>
+    </mat-form-field>
+</div>
