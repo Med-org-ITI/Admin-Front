@@ -1,0 +1,41 @@
+<div class="table-responsive" style="padding: 20px;">
+    <table class="table table-success text-center caption-top" *ngIf="categories; else empty">
+        <caption class="position-relative mb-3">
+            <span> Categories </span>
+            <button (click)="openDialogNewCategory()" class="position-absolute end-0 btn btn-outline-success">
+                Add New Category
+            </button>
+        </caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cat of categories" class="table-light table-group-divider">
+                <td>{{ cat.name }}</td>
+                <td class="w-15">
+                    <a>
+                        <button class="me-2" mat-mini-fab color="primary"
+                            aria-label="Example icon button with a delete icon">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                    </a>
+                    <a href="/categories">
+                        <button (click)="deleteCategory(cat.id)" mat-mini-fab color="warn"
+                            aria-label="Example icon button with a delete icon">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<ng-template #empty>
+    <div>
+        <p>No Categories to Show...</p>
+    </div>
+</ng-template>

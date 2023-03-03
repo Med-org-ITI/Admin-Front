@@ -31,6 +31,8 @@ import { ProductsComponent } from './components/products/products.component';
 import { AddProductComponent } from './components/products/add-product/add-product.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { UsersComponent } from './components/users/users.component';
+import { CategoriesPageComponent } from './components/categories/categories.component';
+import { AddCategoryComponent } from './components/categories/add-category/add-category.component';
 
 
 const routes: Routes = [
@@ -68,6 +70,8 @@ const routes: Routes = [
     OrdersComponent,
     UsersComponent,
     AddProductComponent,
+    CategoriesPageComponent,
+    AddCategoryComponent,
   ],
   imports: [
     BrowserModule,

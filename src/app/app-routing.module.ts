@@ -6,6 +6,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { UsersComponent } from './components/users/users.component';
 import { ShellComponent } from './shell/shell.component';
+import { CategoriesPageComponent } from './components/categories/categories.component';
 
 // import { ProductsListComponent } from './components/products/products-list/products-list.component';
 
@@ -27,8 +28,8 @@ const routes: Routes = [
         component: OrdersComponent,
       },
       {
-        path: 'users',
-        component: UsersComponent,
+        path: 'categories',
+        component: CategoriesPageComponent,
       }
     ]
   }

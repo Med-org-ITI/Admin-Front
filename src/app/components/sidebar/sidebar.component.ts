@@ -13,6 +13,11 @@ export class SidebarComponent implements OnInit{
       active:false
     }, 
     {
+      label: "Categories",
+      link: "/categories",
+      active: false
+    },
+    {
       label: "Products",
       link: "/products",
       active: true
@@ -22,11 +27,6 @@ export class SidebarComponent implements OnInit{
       link: "/orders",
       active: false
     },
-    {
-      label: "Users",
-      link: "/users",
-      active: false
-    }
   ]
   constructor(){}
 

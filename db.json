@@ -63,5 +63,81 @@
       "description": "pppp",
       "id": 9
     }
+  ],
+  "ELEMENT_DATA": [
+    {
+      "id": 1,
+      "items": "Hydrogen",
+      "status": "pending",
+      "total": "H"
+    },
+    {
+      "id": 2,
+      "items": "Helium",
+      "status": "pending",
+      "total": "He"
+    },
+    {
+      "id": 3,
+      "items": "Lithium",
+      "status": "canceled",
+      "total": "Li"
+    },
+    {
+      "id": 4,
+      "items": "Beryllium",
+      "status": "recieved",
+      "total": "Be"
+    },
+    {
+      "id": 5,
+      "items": "Boron",
+      "status": "recieved",
+      "total": "B"
+    },
+    {
+      "id": 6,
+      "items": "Carbon",
+      "status": "canceled",
+      "total": "C"
+    },
+    {
+      "id": 7,
+      "items": "Nitrogen",
+      "status": "on hold",
+      "total": "N"
+    },
+    {
+      "id": 8,
+      "items": "Oxygen",
+      "status": "canceled",
+      "total": "O"
+    },
+    {
+      "id": 9,
+      "items": "Fluorine",
+      "status": "recieved",
+      "total": "F"
+    },
+    {
+      "id": 10,
+      "items": "Neon",
+      "status": "pending",
+      "total": "Ne"
+    }
+  ],
+  "categories": [
+    {
+      "id": 2,
+      "name": "antibiotics"
+    },
+    {
+      "id": 3,
+      "name": "stomach medication"
+    },
+    {
+      "name": "medecine",
+      "id": 4
+    }
   ]
 }
