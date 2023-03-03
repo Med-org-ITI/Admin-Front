@@ -3,6 +3,26 @@
 //     color: #fff;
 // }
 
-.container{
-    padding-top: 50px;
+.container {
+//   padding-top: 50px;
+max-width: 1200px;
+margin: 0 auto;
+padding-left: 18px;
+padding-top: 16px;
+
 }
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+}
+
