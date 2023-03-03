@@ -1,0 +1,27 @@
+.sidebar{
+    position: fixed;
+    left:0;
+    top:0;
+    // width:20%;
+    width: 20vw;
+    height: 100vh;
+    background-color: #171b2a;
+    color: white;
+    padding-top: 70px;
+    // padding-top: 57px;
+    .sidebar-item{
+        // padding: 10px;
+        padding: 10px 40px;
+        // font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .sidebar-item-active{
+        // padding: 10px;
+        padding: 10px 40px;
+        // font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #0a9a73;
+    }
+}
