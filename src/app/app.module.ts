@@ -1,16 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-
-import { ShellComponent } from './shell/shell.component';
-import { HeaderComponent } from './components/header/header.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { ProductsComponent } from './components/products/products.component';
-import { OrdersComponent } from './components/orders/orders.component';
-import { UsersComponent } from './components/users/users.component';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -26,31 +19,42 @@ import { MatOptionModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
+import { ShellComponent } from './shell/shell.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ProductsComponent } from './components/products/products.component';
 import { AddProductComponent } from './components/products/add-product/add-product.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { UsersComponent } from './components/users/users.component';
+
 
 const routes: Routes = [
   {
     path: '',
     component: ShellComponent,
-    // children: [
-    //   {
-    //     path: 'dashboard',
-    //     component: DashboardComponent,
-    //   },
-    //   {
-    //     path: 'products',
-    //     component: ProductsComponent,
-    //   },
-    //   {
-    //     path: 'orders',
-    //     component: OrdersComponent,
-    //   },
-    //   {
-    //     path: 'users',
-    //     component: UsersComponent,
-    //   }
-    // ],
+    children: [
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+      },
+      {
+        path: 'products',
+        component: ProductsComponent,
+      },
+      {
+        path: 'orders',
+        component: OrdersComponent,
+      },
+      {
+        path: 'users',
+        component: UsersComponent,
+      }
+    ],
   },
 ];
 @NgModule({
@@ -85,7 +89,11 @@ const routes: Routes = [
     MatListModule,
     MatDatepickerModule,
     MatNativeDateModule,
-  
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],

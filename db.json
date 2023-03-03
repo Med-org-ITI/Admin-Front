@@ -1,0 +1,67 @@
+{
+  "productList": [
+    {
+      "id": 1,
+      "productName": "Brufin",
+      "category": "Analgesics",
+      "expire_date": "3/4/2023",
+      "price": 20,
+      "quantity": 2,
+      "description": "bbb"
+    },
+    {
+      "id": 2,
+      "productName": "Panadol",
+      "category": "Analgesics",
+      "expire_date": "6/5/2023",
+      "price": 30,
+      "quantity": 1,
+      "description": "ppp"
+    },
+    {
+      "id": 3,
+      "productName": "Bi-Alcofan",
+      "category": "Analgesics",
+      "expire_date": "7/6/2023",
+      "price": 25,
+      "quantity": 3,
+      "description": "biii"
+    },
+    {
+      "id": 4,
+      "productName": "Bi-Alcofan",
+      "category": "Analgesics",
+      "expire_date": "7/6/2023",
+      "price": 25,
+      "quantity": 3,
+      "description": "biii"
+    },
+    {
+      "id": 6,
+      "productName": "Bi-Alcofan",
+      "category": "Analgesics",
+      "expire_date": "7/6/2023",
+      "price": 25,
+      "quantity": 3,
+      "description": "biii"
+    },
+    {
+      "id": 7,
+      "productName": "Bi-Alcofan",
+      "category": "Analgesics",
+      "expire_date": "7/6/2023",
+      "price": 25,
+      "quantity": 3,
+      "description": "biii"
+    },
+    {
+      "productName": "Brufin",
+      "category": "Analgesics",
+      "expire_date": "2023-03-08T22:00:00.000Z",
+      "price": 20,
+      "quantity": 1,
+      "description": "ssss",
+      "id": 8
+    }
+  ]
+}
